@@ -1,4 +1,4 @@
-# GIT操作流程及常见命令
+# GIT访问GitHub操作流程及常见命令
 
 ## 一、git工作流程图
 ![示例图片](images/GIT_pic.png)
@@ -12,3 +12,15 @@
   <img src="images/GIT_pic.png" width="700" />
 </p>
 ```
+## 二、本地文件上传到GitHub
+### 流程：
+1、生成ssh密钥并关联GitHub
+2、在GitHub创建空仓库
+3、在终端打开目标文件夹
+4、`git init`
+5、`git add` 
+    `git add .`表示添加全部文件，`git add 文件名.格式`表示上传某个文件，上传文件夹是`git 文件夹名`
+6、`git commit -m "操作了什么"`
+7、`git branch -M main`
+8、`git remote add origin ssh地址`
+9、`git push -u origin main` 
