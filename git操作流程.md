@@ -14,9 +14,9 @@
 ```
 ## 二、本地文件上传到GitHub
 ### 流程：
-1、生成ssh密钥并关联GitHub
-2、在GitHub创建空仓库
-3、在终端打开目标文件夹
+1、生成ssh密钥并关联GitHub  
+2、在GitHub创建空仓库  
+3、在终端打开目标文件夹  
 4、`git init`
 5、`git add` 
     `git add .`表示添加全部文件，`git add 文件名.格式`表示上传某个文件，上传文件夹是`git 文件夹名`
