@@ -25,3 +25,8 @@
 7、`git branch -M main`  
 8、`git remote add origin ssh地址`  
 9、`git push -u origin main`   
+  
+    
+明天要做的  
+1、熟悉分支使用  
+2、从GitHub通过git把仓库下载到本地的使用方法包括增删改查
