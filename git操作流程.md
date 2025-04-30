@@ -74,7 +74,6 @@ git push -u origin main
 git push  
 ```
 明天要做的  
-1、熟悉分支使用  
-2、从GitHub通过git把仓库下载到本地的使用方法包括增删改查
-
-444aaaa
+~~1、熟悉分支使用~~  
+1、从GitHub通过git把仓库下载到本地的使用方法包括增删改查  
+2、vscode操作实现git操作
