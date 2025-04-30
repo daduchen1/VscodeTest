@@ -15,21 +15,21 @@
 换行需要在行尾添加两个空格
 ## 二、本地文件上传到GitHub
 ### 流程：
-1、生成ssh密钥并关联GitHub  
+#### 1、生成ssh密钥并关联GitHub  
 生成ssh的命令`ssh-keygen -t ed25519 -C "your_email@example.com"`,生成后一般存在.ssh文件夹，其中`id_ed25519`是私钥，`id_ed25519.pub`是公钥，使用`cat`命令可以查看公钥内容并给到github，也可以`pbcopy < ~/.ssh/id_ed25519.pub  # 自动复制到剪贴板`  
-2、在GitHub创建空仓库  
-3、在终端打开目标文件夹  
-4、`git init`  
+#### 2、在GitHub创建空仓库  
+#### 3、在终端打开目标文件夹  
+#### 4、`git init`  
 ##执行`git init`后，默认生成一个分支，叫master分支，于是会用到后面的 git branch -M main命令，现代git中一般初始化仓库地都是生成main分支  
-5、`git add`  
+#### 5、`git add`  
     ##`git add .`表示添加全部文件，`git add 文件名.格式`表示上传某个文件，上传文件夹是`git 文件夹名`  
-6、`git commit -m "操作了什么"`  
-7、`git branch -M main`  
+#### 6、`git commit -m "操作了什么"`  
+#### 7、`git branch -M main`  
   ##`-M`表示强制把分支重命名成`main`   
-8、`git remote add origin ssh地址`  
+#### 8、`git remote add origin ssh地址`  
   ##将远程仓库的 `SSH` 地址以别名 `origin` 添加到本地仓库的远程仓库列表中。  
   ##其中`add`表示添加一个新的远程仓库链接，`origin`是一个约定俗成的仓库的别名，它用来代替ssh地址(比如git@github.com:username/repo.git)或url地址  
-8.1 关于`origin`的一些点  
+##### 8.1 关于`origin`的一些点  
 a、关联远程仓库（初始化）  
 第一次将`本地仓库`与`远程仓库`连接时，通过以下命令`添加仓库别名`  
 `git remote add origin git@github.com:username\repo.git`  
@@ -44,7 +44,7 @@ c、克隆仓库时的默认别名
 `git clone git@github.com:username/repo.git`  
 效果 ：  
 本地会生成一个名为 `origin` 的远程仓库别名，指向原始仓库地址。  
-9、`git push -u origin main`   
+#### 9、`git push -u origin main`   
 `git push -u main`vs`git push main`  
 区别 ：  
 `git push -u main` 中的 `-u`（或 `--set``-upstream`）会 建立本地分支与远程分支的跟踪关系  
