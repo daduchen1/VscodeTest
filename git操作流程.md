@@ -57,6 +57,22 @@ c、克隆仓库时的默认别名
 `git push -u origin main`  
 #后续只需直接推送（无需重复指定分支）  
 `git push `     
+
+### 举例：  
+```  
+# 初始化仓库并切换到 main 分支
+git init
+git branch -M main
+
+# 关联远程仓库
+git remote add origin git@github.com:yourname/yourrepo.git
+
+# 首次推送并绑定跟踪关系
+git push -u origin main
+
+# 后续只需直接推送
+git push  
+```
 明天要做的  
 1、熟悉分支使用  
 2、从GitHub通过git把仓库下载到本地的使用方法包括增删改查
